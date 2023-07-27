@@ -250,14 +250,7 @@ img {
   text-align: center;
 }
 
-/* .principals-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-} */
-
-/*-----------------------ACTIVITIES----------------------*/
-
-.activities {
-  padding-bottom: 120px;
+.principals-item-box {
   display: none;
 }
 
@@ -273,34 +266,28 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*-----------------------ACTIVITIES----------------------*/
+
+/* .activities {
+  display: none;
+} */
 
 .activities-title {
-  color: var(--navyblue);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-align: center;
-  margin-bottom: 72px;
+  display: none;
 }
 
 .activities-list {
-  display: flex;
-  gap: 24px;
-}
-
-.activities-item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+  display: none;
 }
 
 /*-----------------------TEAM----------------------*/
 
 .our-team {
   background-color: var(--cloud);
-  height: 732px;
+  height: 100%;
+  width: 100%;
   /* padding: 120px 0; */
-  padding-bottom: 96px;
+  padding: 96px 0;
 }
 
 .our-team-title {
@@ -316,11 +303,12 @@ img {
 
 .our-team-list {
   display: flex;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding-bottom: 120px; */
   /* gap: 24px; */
-  flex-direction: column;
-  gap: 72px;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  justify-content: center;
 }
 
 .team-subtitle {
@@ -377,9 +365,14 @@ img {
 
 .team-member-text {
   padding: 32px 0;
+  text-align: center;
 }
 
 .member-description {
+  color: var(--slate);
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -955,6 +948,16 @@ img {
   .container {
     max-width: 428px;
   }
+
+  .our-team {
+    padding: 96px 82px;
+  }
+
+  .container-team {
+    min-width: 264px;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -971,6 +974,13 @@ img {
 
   .principals-subtitle {
     text-align: left;
+  }
+
+  .container-team {
+    width: 100%;
+  }
+  .our-team-list {
+    column-gap: 24px;
   }
 }
 
@@ -1001,5 +1011,31 @@ img {
     justify-content: center;
     height: 112px;
     border-radius: 4px;
+  }
+  .paragraph-text {
+    font-weight: 400;
+  }
+  .activities {
+    padding-bottom: 120px;
+  }
+
+  .activities-title {
+    color: var(--navyblue);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  .activities-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .activities-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
   }
 }
