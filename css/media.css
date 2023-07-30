@@ -2,11 +2,64 @@
   .container {
     max-width: 426px;
   }
+  .modal {
+    width: 408px;
+  }
+
+  
+
+}
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    max-width: 768px;
   }
+  
+  .header-nav {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    }
+
+  .header-nav-list {
+    display: flex;
+    /* display: none; */
+    gap: 40px;
+  }
+
+  .nav-item {
+    display: block;
+    padding: 24px 0;
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contacts {
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .contacts-list-item {
+    font-size: 12px;
+    color: var(--slate);
+    /* line-height: 1.5; */
+    line-height: 1.16;
+    /* letter-spacing: 0.02em; */
+    letter-spacing: 0.04em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+
+  .contacts .link:hover,
+  .contacts .link:focus {
+    color: #404bbf;
+  }
+
+
   .principals-item {
     flex-basis: calc((100% - 24px) / 2);
   }
@@ -83,7 +136,7 @@
   }
 
   .solutions-container {
-  background-image: linear-gradient(
+    background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -100,12 +153,44 @@
       ),
       url(../images/people-office_768-2x.jpg);
   }
+
+  .portfolio-hero {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filters {
+    justify-content: center;
+    margin-bottom: 64px;
+    max-width: 100%;
+  }
+
+  .projects-wrap {
+    row-gap: 72px;
+    justify-content: start;
+    padding-left: 15px;
+  }
+
+  .project-item {
+    width: calc((100% - 54px) / 2);
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
+
+  .header-contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contacts-list-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;}
 
   .principals-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
@@ -202,8 +287,8 @@
     padding: 188px 0;
   }
 
-    .solutions-container {
-  background-image: linear-gradient(
+  .solutions-container {
+    background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -220,4 +305,23 @@
       ),
       url(../images/people-office_1-2x.jpg);
   }
+
+  .portfolio-hero {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .filters {
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+
+  .project-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .projects-wrap {
+    padding-left: 0;
+  }
+
 }
