@@ -3,11 +3,6 @@
     max-width: 426px;
   }
 
-  .our-team {
-    padding: 96px 82px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 738px;
@@ -45,7 +40,7 @@
   .footer-blocks {
     column-gap: 24px;
     justify-content: start;
-    padding-left: 108px;
+    padding-left: 97px;
   }
 
   .footer-block-logo {
@@ -74,6 +69,36 @@
 
   .footer-subscribe-btn {
     margin-left: 0;
+  }
+
+  .footer-socials-title {
+    text-align: start;
+  }
+
+  .solutions-title {
+    font-size: 56px;
+    line-height: 1.07;
+    padding-bottom: 36px;
+    max-width: 496px;
+  }
+
+  .solutions-container {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office_768.jpg);
+  }
+
+  @media (min-device-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office_768-2x.jpg);
   }
 }
 
@@ -151,7 +176,7 @@
   .footer-blocks {
     flex-wrap: nowrap;
     align-items: baseline;
-    padding-left: 0;
+    padding-left: 15px;
     /* justify-content: center; */
     gap: 0;
   }
@@ -167,5 +192,32 @@
 
   .footer-subscribe {
     align-items: end;
+  }
+
+  .solutions-title {
+    padding-bottom: 48px;
+  }
+
+  .solutions {
+    padding: 188px 0;
+  }
+
+    .solutions-container {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office_1.jpg);
+  }
+
+  @media (min-device-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office_1-2x.jpg);
   }
 }

@@ -170,8 +170,8 @@ img {
 
 /*-----------------------SOLUTIONS----------------------*/
 .solutions {
-  height: 600px;
-  padding: 188px 0;
+  /* height: 600px; */
+  padding: 112px 0;
 }
 
 .solutions-container {
@@ -179,7 +179,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office_1.jpg);
+    url(../images/people-office_428.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1440px;
@@ -187,16 +187,28 @@ img {
   margin: 0 auto;
 }
 
+@media (min-device-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions-container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office_428-2x.jpg);
+  }
+}
+
 .solutions-title {
   color: var(--white, #fff);
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 48px;
+  padding-bottom: 72px;
   width: 100%;
-  max-width: 496px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -443,6 +455,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02rem;
   max-width: 264px;
+  text-align: start;
+  font-weight: 400;
 }
 
 .footer-socials-title {
@@ -452,6 +466,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02rem;
   color: var(--white);
+  text-align: center;
 }
 
 .footer-subscribe {
